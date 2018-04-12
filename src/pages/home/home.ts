@@ -48,8 +48,8 @@ export class HomePage {
   }
 
   randomize() {
+    this.slides.slideTo(0, 500);
     this.cardSupply = this.prov.randomCards();
-    this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
 
   getCardsFor(level: String) {

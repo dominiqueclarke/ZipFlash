@@ -50,7 +50,8 @@ export class FlashCardsProvider {
   }
 
   shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    var newArray = array.slice();
+    var currentIndex = newArray.length, temporaryValue, randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
@@ -60,16 +61,16 @@ export class FlashCardsProvider {
       currentIndex -= 1;
 
       // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+      temporaryValue = newArray[currentIndex];
+      newArray[currentIndex] = newArray[randomIndex];
+      newArray[randomIndex] = temporaryValue;
     }
 
-    return ;
+    return newArray;
   }
 
   randomCards() {
-    return this.shuffle(this.defaultCards)
+    return this.shuffle(this.defaultCards);
   }
 
   testCards =
