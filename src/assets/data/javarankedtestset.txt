@@ -1,0 +1,102 @@
+[
+  {
+    "front": "abstract",
+    "back": "A Java keyword used in a class definition to specify that a class is not to be instantiated, but rather inherited by other classes. An abstract class can have abstract methods that are not implemented in the abstract class, but in subclasses.",
+    "level": "beginner"
+    },
+  {
+    "front": "abstract class",
+    "back": "A class that contains one or more abstract methods , and therefore can never be instantiated. Abstract classes are defined so that other classes can extend them and make them concrete by implementing the abstract methods.",
+    "level": "intermediate"
+    },
+  {
+    "front": "abstract method",
+    "back": "A method that has no implementation.",
+    "level": "hard"
+    },
+  {
+    "front": "Abstract Window Toolkit (AWT)",
+    "back": "A collection of graphical user interface (GUI) components that were implemented using native-platform versions of the components. These components provide that subset of functionality which is common to all native platforms. Largely supplanted by the Project Swing component set. See also Swing .",
+    "level": "beginner"
+    },
+  {
+    "front": "access control",
+    "back": "The methods by which interactions with resources are limited to collections of users or programs for the purpose of enforcing integrity, confidentiality, or availability constraints.",
+    "level": "intermediate"
+    },
+  {
+    "front": "ACID",
+    "back": "The acronym for the four properties guaranteed by transactions: atomicity, consistency, isolation, and durability.",
+    "level": "hard"
+    },
+  {
+    "front": "actual parameter list",
+    "back": "The arguments specified in a particular method call. See also formal parameter list .",
+    "level": "beginner"
+    },
+  {
+    "front": "API",
+    "back": "Application Programming Interface. The specification of how a programmer writing an application accesses the behavior and state of classes and objects.",
+    "level": "intermediate"
+    },
+  {
+    "front": "applet",
+    "back": "A component that typically executes in a Web browser, but can execute in a variety of other applications or devices that support the applet programming model.",
+    "level": "hard"
+    },
+  {
+    "front": "argument",
+    "back": "A data item specified in a method call. An argument can be a literal value, a variable, or an expression.",
+    "level": "beginner"
+    },
+  {
+    "front": "array",
+    "back": "A collection of data items, all of the same type, in which each item's position is uniquely designated by an integer.",
+    "level": "intermediate"
+    },
+  {
+    "front": "ASCII",
+    "back": "American Standard Code for Information Interchange. A standard assignment of 7-bit numeric codes to characters. See also Unicode .",
+    "level": "hard"
+    },
+  {
+    "front": "atomic",
+    "back": "Refers to an operation that is never interrupted or left in an incomplete state under any circumstance.",
+    "level": "beginner"
+    },
+  {
+    "front": "authentication",
+    "back": "The process by which an entity proves to another entity that it is acting on behalf of a specific identity.",
+    "level": "intermediate"
+    },
+  {
+    "front": "authorization",
+    "back": "See access control.",
+    "level": "hard"
+    },
+  {
+    "front": "autoboxing",
+    "back": "Automatic conversion between reference and primitive types.",
+    "level": "beginner"
+  },
+  {
+    "front": "bean",
+    "back": "A reusable software component that conforms to certain design and naming conventions. The conventions enable beans to be easily combined to create an application using tools that understand the conventions.",
+    "level": "intermediate"
+    },
+  {
+    "front": "binary operator",
+    "back": "An operator that has two arguments.",
+    "level": "hard"
+    },
+  {
+    "front": "bit",
+    "back": "The smallest unit of information in a computer, with a value of either 0 or 1.",
+    "level": "beginner"
+    },
+  {
+    "front": "bitwise operator",
+    "back": "An operator that manipulates the bits of one or more of its operands individually and in parallel. Examples include the binary logical operators (&, |, ^), the binary shift operators (<<, >>, >>>) and the unary one's complement operator (~).",
+    "level": "intermediate"
+    }
+]
