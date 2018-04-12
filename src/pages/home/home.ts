@@ -39,7 +39,8 @@ export class HomePage {
   }
 
   reset() {
-    this.navCtrl.setRoot(this.navCtrl.getActive().component);
+    this.slides.slideTo(0, 500);
+    this.cardSupply = this.prov.allCards();
   }
   next() {
     let idx = this.slides.getActiveIndex() + 1;
@@ -48,8 +49,11 @@ export class HomePage {
 
   randomize() {
     this.cardSupply = this.prov.randomCards();
-
     this.navCtrl.setRoot(this.navCtrl.getActive().component);
+  }
 
+  getCardsFor(level: String) {
+    this.slides.slideTo(0, 500);
+    this.cardSupply = this.prov.cardsFor(level);
   }
 }

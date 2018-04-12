@@ -16,48 +16,58 @@ export class FlashCardsProvider {
     front: "Hello",
     back: "World!"
   };
+
   idx = 0;
   defaultCards: any[] = [];
   httpCl: HttpClient;
   public _robotOverlords: any[] = [];
+
   constructor(public http: HttpClient) {
     console.log('FlashCardsProvider Provider');
     this.httpCl = http;
     this.getData();
   }
+
   getData() {
     return this.httpCl.get('assets/data/javacards.txt').subscribe(data => {
       for (var key in data) {
         this.defaultCards.push(data[key]);
       }
-      });
+    });
   }
 
   cardFor(cardindex) {
     this.idx = cardindex % this.defaultCards.length;
     return this.defaultCards[this.idx];
   }
+
   allCards() {
-    return this.defaultCards
+    return this.defaultCards;
   }
+
+  cardsFor(level: string) {
+    return this.defaultCards.filter(card => card.level === level);
+  }
+
   shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
-  
+
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-  
+
       // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
-  
+
       // And swap it with the current element.
       temporaryValue = array[currentIndex];
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = temporaryValue;
     }
-  
-    return array;
+
+    return ;
   }
+
   randomCards() {
     return this.shuffle(this.defaultCards)
   }
